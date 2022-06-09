@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Form Elements</title>
+</head>
+<body>
+    <h1>Form Elements!</h1>
+        <form enctype="multipart/form-data">
+            
+         
+           <p><label for="name">Name:</label><br>
+                <input type="text" name="Username" placeholder="Enter Name"
+             size="10" maxlength="25" id="name"></p>
+         
+
+          <p><label for="mail">Email:</label><br>
+            <input type="email" name="email" placeholder="Enter email"
+          minlength="4" id="mail"></p>
+
+          <p> 
+            <label for="phone">Your Mobile Number:</label><br>
+            <input type="tel" id="phone" name="user_number" placeholder="Enter Mobile number" size="20"
+            maxlength="12" required>
+        </p>
+
+        <p>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="100">
+        </p>
+
+        <p>
+            <label for="dob">Date Of Birth</label>
+            <input type="datetime-local" id="dob" name="dob">
+        </p>
+
+        <p>
+            <label for="web">Website url:</label>
+            <input type="url" id="web" name="website">
+        </p>
+
+             
+             <p>
+                 <label for="sub">Subject:</label><br>
+                 <input type="text" name="subject" placeholder="Enter subject" id="sub">
+             </p>
+
+             <p>
+                 I want to learn first<br>
+                 <input type="radio" name="request_type" value="HTML" checked id="html"><label for="html">HTML</label><br>
+                 <input type="radio" name="request_type" value="CSS" id="css"><label for="css">CSS</label><br>
+                 <input type="radio" name="request_type" value="Javascript" id="javascript"><label for="javascript">Javascript</label>
+             </p>
+
+             <p>
+                 <label>I want to learn</label><br>
+                 <input type="checkbox" name="learn[]" value="Javascript">Javascript<br>
+                 <input type="checkbox" name="learn[]" value="html">html<br>
+                 <input type="checkbox" name="learn[]" value="CSS">CSS<br>
+                 <input type="checkbox" name="learn[]" value="bootstrap">bootstrap<br>
+                 <input type="checkbox" name="learn[]" value="nodejs">nodejs
+             </p>
+
+             <p>
+                 <label for="number">Select your number:</label><br>
+                 <select name="your_number" id="number">
+                 <option value="">select option</option>
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                 <option value="5" selected>5</option>
+                 <option value="6">6</option>
+                 <option value="7">7</option>
+                 <option value="8">8</option>
+                 <option value="9">9</option>
+                 <option value="10">10</option>
+
+                 </select>
+             </p>
+
+             <p>
+                <label for="num">Select your number:</label><br>
+                <select name="your_number" id="num" multiple size="6">
+                <option value="">select option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+
+                </select>
+            </p>
+
+             <p> <label>Upload your resume:</label><br>
+                 <input type="file"  name="file">
+             </p>
+
+            
+             <p>
+                <label> Message:</label><br>
+                 <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message"></textarea>
+             </p>
+
+             <p>
+                <input type="submit" name="send form" value="send form">
+            </p>
+            <p>
+                <input type="reset"  name="reset_form" value="Reset form">
+            </p>
+        </form>
+</body>
+</html>

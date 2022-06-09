@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Design form!</title>
+
+    <style>
+        h1{
+            background-color:red;
+            color: ghostwhite;
+            margin-top: 5px;
+          
+           
+           
+        }
+ 
+        #mag{
+            font-style: italic;
+        }
+ 
+        .footer{
+            font-weight: bold;
+        }
+ 
+        #border{
+            border: 5px solid black;
+            width:fit-content;
+            padding-right: 15px;
+           padding-bottom: 0px;
+           padding-left: 10px;
+           margin: 170px 50px 25px 400px;
+           border-radius: 7px 7px 7px 7px; 
+             }
+
+         .textbox{
+             border-top: 0;
+             border-left: 0;
+             border-right: 0;
+             border-color: black;
+             border-width: 3px;
+             
+         }   
+          #elepadd{
+              padding-left: 10px;
+          }
+
+          #firstname{
+            margin-right: 30px;
+          }
+          #city{
+             margin-right: 30px;
+          }
+          #state{
+              margin-right: 60px;
+          }
+         
+       #flex{
+              display: flex;
+              gap: 200px;
+              
+              
+          }
+
+          #secondflex{
+              display: flex;
+              gap:125px;
+              margin: 0;
+             
+              
+              
+          }
+         
+ 
+             
+    </style>
+</head>
+<body>
+ 
+        <form id="border"> 
+            
+            <h1>Yes! I want to subscribe to <span id="mag">Mag-O-Zine</span></h1>
+            <div id="elepadd">
+               
+                
+                    <input  class="textbox" type="text" id="firstname" name="userfirst_name" placeholder="Enter first name" size="30"
+                    maxlength="50" required>
+                    
+                    
+                    
+                    <input  class="textbox" type="text" id="lastname" name="userlast_name" placeholder="Enter last name" size="30"
+                    maxlength="50" required><br>
+                    
+
+                      <div id="flex">
+                        <div>
+                            First Name
+                        </div>
+                        <div >
+                            Last Name
+                        </div>
+                      </div>
+                      
+                  
+                <p>
+                    
+                       
+                    <input  class="textbox" type="text" id="address" name="user_address" placeholder="Enter your address" size="68"
+                    maxlength="50" required><br>
+                    <span>Address</span>
+                    
+                </p>
+    
+                    
+                
+                <input class="textbox" type="text" id="city" name="user_city" placeholder="Enter your city" size="13"
+                maxlength="50" required>
+    
+                
+                <input class="textbox" type="text" id="state" name="user_state" placeholder="Enter state" size="9"
+                maxlength="50" required>
+    
+                
+                <input class="textbox" type="text" id="zip" name="user_zip" placeholder="Enter zipcode" size="20"
+                maxlength="50" required>
+
+                <div id="secondflex">
+                    <div>
+                        City
+                    </div>
+                    <div >
+                        State
+                    </div>
+                    <div >
+                        Zip
+                    </div>
+                  </div>
+    
+                <p>
+                    <strong>Subscribe for:</strong> <input type="checkbox" checked> <strong>1 year($19.95)</strong> <input type="checkbox"> <strong>2 years($35.00)</strong>
+                </p>
+    
+                <p class="footer">
+                    Send me more information about:<br>
+                    <input type="checkbox" checked>Computer-Zine<br>
+                    <input type="checkbox">Fishing-Zine</br>
+                    <input type="checkbox" checked>Cat-O-Zine
+                </p>
+           
+            </div>
+            
+        </form>
+   
+</body>
+</html>

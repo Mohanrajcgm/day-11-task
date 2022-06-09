@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Types Of Inputs</title>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <fieldset>
+                <legend>Enter Your Details</legend>
+                <div>
+                    <p><label>Your Name</label>
+                        <input type="text" name="name" required><br>
+                    </p>
+                    <p><label>Email</label>
+                        <input type="email" name="email" required><br>
+                    </p>
+                    <p><label>Password</label>
+                        <input type="password" name="pword" required><br>
+                    </p>
+                    <p><label>Telephone Number</label>
+                        <input type="tel" name="tnum" required> <br>
+                    </p>
+                    <p><label>Age</label>
+                        <input type="number" name="mnum" min="18" required><br>
+                    </p>
+                    <p><label>Date of Birth</label>
+                        <input type="date" name="DOB" required> <br>
+                    </p>
+                    <p><label>Upload Your Resume</label>
+                        <input type="file" name="resume" required> <br>
+                    </p>
+                    <p> <label>Your Portfolio Link</label>
+                        <input type="url" name="pfolio" required> <br>
+                    </p>
+                    <p><label>Skill level</label>
+                        <input type="range" name="skillset" required> <br>
+                    </p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Course Details</legend>
+                <div>
+                    <p><label>Course</label><br> <br>
+                        <input type="radio" name="course" value="Front-end" required> Front-end <br>
+                        <input type="radio" name="course" value="Back-end" required> Back-end <br>
+                    </p>
+                    <p><label>Payment Option</label><br><br>
+                        <input type="checkbox" name="pmethod" value="emi" required>EMI <br>
+                        <input type="checkbox" name="pmethod" value="full Payment" required>Full Payment <br>
+                    </p>
+                    <p><input type="button" value="Rs.50000"><br>
+                    </p>
+                    <p><label>Every month date on you pay</label><br><br>
+                        <input type="datetime-local">
+                    </p>
+                    <p>
+                        <label>Joining Week</label><br><br>
+                        <input type="week">
+                    </p>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Joining Details</legend>
+                <div>
+                    <p>
+                        <label>Joining Month</label>
+                        <input type="month"> <br>
+                    </p>
+                    
+                    <p>
+                        <label>please set the time When You submit</label>
+                        <input type="time"><br>
+                    </p>
+
+                    <p>
+                        Search your id
+                        <input type="search" name="id_search" id="1234">
+                    </p>
+                    
+                </div>
+                <div>
+                    <input type="color" id="head" name="color"
+                           value="#e66465">
+                    <label for="head">Your favorite Color</label>
+                </div>
+            </fieldset>
+
+           <p>
+            <input type="hidden">
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="clear" value="Clear All">
+           </p>
+
+          
+        </form>
+    </div>
+
+</body>
+
+</html>
